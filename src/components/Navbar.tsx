@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const NAV_LINKS = [
+  { label: "All Products", href: "/products" },
   { label: "Men", href: "/products?gender=men" },
   { label: "Women", href: "/products?gender=women" },
   { label: "Kids", href: "/products?gender=unisex" },
