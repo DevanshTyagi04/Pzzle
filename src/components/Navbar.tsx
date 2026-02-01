@@ -17,13 +17,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-light-100">
+    <header className="sticky top-0 z-50 bg-light-200">
       <nav
         className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
         aria-label="Primary"
       >
         <Link href="/" aria-label="Nike Home" className="flex items-center">
-          <Image src="/logo.svg" alt="Nike" width={28} height={28} priority className="invert" />
+          <Image src="/logo2.PNG" alt="Nike" width={28} height={28} priority className="invert" />
         </Link>
 
         <ul className="hidden items-center gap-8 md:flex">

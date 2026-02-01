@@ -8,8 +8,8 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "Nike",
-  description: "An e-commerce platform for Nike shoes",
+  title: "Pzzle",
+  description: "Premium everyday t-shirts designed for comfort and style",
 };
 
 export default function RootShell({
@@ -19,7 +19,16 @@ export default function RootShell({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jost.className} antialiased`}>{children}</body>
+      <body
+        className={`
+          ${jost.className}
+          antialiased
+          bg-light-200
+          text-dark-900
+        `}
+      >
+        {children}
+      </body>
     </html>
   );
 }
