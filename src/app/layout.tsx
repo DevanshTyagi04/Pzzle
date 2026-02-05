@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Jost } from "next/font/google";
+import { Montserrat_Alternates } from "next/font/google";
 import "./globals.css";
 
-const jost = Jost({
-  variable: "--font-jost",
+const montserratAlternates = Montserrat_Alternates({
+  variable: "--font-montserrat-alternates",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // pick what you need
 });
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootShell({
     <html lang="en">
       <body
         className={`
-          ${jost.className}
+          ${montserratAlternates.className}
           antialiased
           bg-light-200
           text-dark-900

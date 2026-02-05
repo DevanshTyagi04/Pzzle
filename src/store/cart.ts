@@ -1,72 +1,80 @@
-import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+"use client";
 
-interface CartItem {
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
+
+export type Size = "S" | "M" | "L" | "XL";
+
+export interface CartItem {
   id: string;
+  slug: string;
   name: string;
   price: number;
+  image: string;
+  size: Size;
   quantity: number;
-  image?: string;
 }
 
 interface CartState {
   items: CartItem[];
-  total: number;
-  addItem: (item: Omit<CartItem, 'quantity'>) => void;
-  removeItem: (id: string) => void;
-  updateQuantity: (id: string, quantity: number) => void;
+  addItem: (item: CartItem) => void;
+  removeItem: (id: string, size: Size) => void;
+  updateQuantity: (id: string, size: Size, qty: number) => void;
   clearCart: () => void;
-  getItemCount: () => number;
+  totalItems: () => number;
+  totalPrice: () => number;
 }
 
 export const useCartStore = create<CartState>()(
   persist(
     (set, get) => ({
       items: [],
-      total: 0,
-      addItem: (item) => {
-        const items = get().items;
-        const existingItem = items.find((i) => i.id === item.id);
-        
-        if (existingItem) {
-          set({
-            items: items.map((i) =>
-              i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
-            ),
-          });
-        } else {
-          set({
-            items: [...items, { ...item, quantity: 1 }],
-          });
-        }
-        
-        // Update total
-        const newItems = get().items;
-        const total = newItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-        set({ total });
-      },
-      removeItem: (id) => {
-        const items = get().items.filter((item) => item.id !== id);
-        const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
-        set({ items, total });
-      },
-      updateQuantity: (id, quantity) => {
-        if (quantity <= 0) {
-          get().removeItem(id);
-          return;
-        }
-        
-        const items = get().items.map((item) =>
-          item.id === id ? { ...item, quantity } : item
-        );
-        const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
-        set({ items, total });
-      },
-      clearCart: () => set({ items: [], total: 0 }),
-      getItemCount: () => get().items.reduce((sum, item) => sum + item.quantity, 0),
+
+      addItem: (item) =>
+        set((state) => {
+          const existing = state.items.find(
+            (i) => i.id === item.id && i.size === item.size
+          );
+
+          if (existing) {
+            return {
+              items: state.items.map((i) =>
+                i.id === item.id && i.size === item.size
+                  ? { ...i, quantity: i.quantity + item.quantity }
+                  : i
+              ),
+            };
+          }
+
+          return { items: [...state.items, item] };
+        }),
+
+      removeItem: (id, size) =>
+        set((state) => ({
+          items: state.items.filter(
+            (i) => !(i.id === id && i.size === size)
+          ),
+        })),
+
+      updateQuantity: (id, size, qty) =>
+        set((state) => ({
+          items: state.items.map((i) =>
+            i.id === id && i.size === size
+              ? { ...i, quantity: qty }
+              : i
+          ),
+        })),
+
+      clearCart: () => set({ items: [] }),
+
+      totalItems: () =>
+        get().items.reduce((sum, i) => sum + i.quantity, 0),
+
+      totalPrice: () =>
+        get().items.reduce((sum, i) => sum + i.price * i.quantity, 0),
     }),
     {
-      name: 'cart-storage',
+      name: "pzzle-cart", // localStorage key
     }
   )
 );
