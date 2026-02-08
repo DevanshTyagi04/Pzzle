@@ -2,7 +2,7 @@
 
 @theme {
   /* ===== BRAND COLORS ===== */
-  --color-brand-beige: #F8F5F2;
+  --color-brand-beige: #FDF5ED;
   --color-brand-black: #000000;
 
   /* ===== Dark shades (mapped to brand black) ===== */
@@ -12,7 +12,7 @@
 
   /* ===== Light shades (based on beige) ===== */
   --color-light-100: #ffffff;
-  --color-light-200: #F8F5F2; /* brand beige */
+  --color-light-200: #FDF5ED; /* brand beige */
   --color-light-300: #ece8e4;
   --color-light-400: #d6d2ce;
 

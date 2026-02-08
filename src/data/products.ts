@@ -18,15 +18,17 @@ export const products: Product[] = [
   {
     id: "pzl-001",
     slug: "classic-black-tee",
-    name: "Classic Black Tee",
-    subtitle: "Premium Cotton • Regular Fit",
-    description: "Everyday essential made from ultra-soft, breathable cotton.",
+    name: "EST. THE COMEBACK ",
+    subtitle: "Black Comeback 2027 Graphic Printed Oversized T-Shirt",
+    description:
+    "The T-shirt is for anyone who knows life doesn’t follow deadlines. With a light-hearted, relatable message, this tee keeps things real—because comeback 2026 mein thoda mushkil hai, 2027 mein dekhte hain.\nWear it for the vibe. Wear it for the honesty. The comeback can wait.",
     price: 999,
     images: [
       "/products/1/1.png",
+      "/products/1/5.png",
+      "/products/1/4.png",
       "/products/1/2.png",
       "/products/1/3.png",
-      "/products/1/4.png",
     ],
     badge: {
       label: "New Drop",
@@ -37,9 +39,9 @@ export const products: Product[] = [
   {
     id: "pzl-002",
     slug: "classic-white-tee",
-    name: "Classic White Tee",
-    subtitle: "Premium Cotton • Regular Fit",
-    description: "Clean, timeless white tee designed for all-day comfort.",
+    name: "Holding it Together ",
+    subtitle: "Classic Grey I'm Fine Typography Oversized T-Shirt",
+    description: "Clean Tee designed for those holding it together… kinda. The crossed-out “I’M FINE” says what we all feel, and the small “trying.” keeps it honest.",
     price: 999,
     images: [
       "/products/2/1.png",
@@ -52,9 +54,9 @@ export const products: Product[] = [
   {
     id: "pzl-003",
     slug: "oversized-black-tee",
-    name: "Oversized Black Tee",
-    subtitle: "Heavyweight Cotton • Oversized Fit",
-    description: "Relaxed silhouette with a premium heavyweight feel.",
+    name: "03:17 AM",
+    subtitle: "Unisex Sage Green Minimal Graphic Printed Oversized T-Shirt",
+    description: "Inspired by late-night thoughts that refuse to log out. The clean front print marks the hour when overthinking peaks, while the subtle back text—“still thinking.”—says everything without trying too hard.\n",
     price: 1199,
     images: [
       "/products/3/1.png",
@@ -71,9 +73,9 @@ export const products: Product[] = [
   {
     id: "pzl-004",
     slug: "oversized-beige-tee",
-    name: "Oversized Beige Tee",
-    subtitle: "Heavyweight Cotton • Oversized Fit",
-    description: "Neutral tone oversized tee with a modern streetwear vibe.",
+    name: "Legacy in Progress",
+    subtitle: "Washed Blue Cricket-Inspired Graphic Printed Oversized T-Shirt",
+    description: " T-shirt is a quiet nod to one of cricket’s most unforgettable waits. Designed for those who followed every inning, every near-miss, and every moment of anticipation, this tee captures the patience, pressure, and belief behind the chase.\n",
     price: 1199,
     images: [
       "/products/4/1.png",
@@ -86,9 +88,9 @@ export const products: Product[] = [
   {
     id: "pzl-005",
     slug: "washed-grey-tee",
-    name: "Washed Grey Tee",
-    subtitle: "Vintage Wash • Regular Fit",
-    description: "Garment-washed finish for a subtle vintage look.",
+    name: "UNSPOKEN",
+    subtitle: "Washed Black Hindi Typography Graphic Printed Oversized T-Shirt",
+    description: "For thoughts that stay unsaid and stories that don’t need explaining. Rooted in everyday Indian humour and quiet confidence, this tee speaks volumes without saying too much.",
     price: 1099,
     images: [
       "/products/5/1.png",
@@ -101,9 +103,9 @@ export const products: Product[] = [
   {
     id: "pzl-006",
     slug: "olive-green-tee",
-    name: "Olive Green Tee",
-    subtitle: "Premium Cotton • Regular Fit",
-    description: "Earthy olive tone that pairs effortlessly with any outfit.",
+    name: "Private Thoughts",
+    subtitle: "Washed Brown Thoughtful Typography Graphic Printed Oversized T-Shirt",
+    description: "Made for overthinkers, quiet observers, and people who prefer processing internally. The bold front text captures what everyone feels but rarely voices, while the subtle back print—“Internal Processing Only”—adds a sharp, witty finish.",
     price: 999,
     images: [
       "/products/6/1.png",
@@ -116,14 +118,16 @@ export const products: Product[] = [
   {
     id: "pzl-007",
     slug: "midnight-blue-tee",
-    name: "Midnight Blue Tee",
-    subtitle: "Premium Cotton • Regular Fit",
-    description: "Deep blue shade with a soft hand feel.",
+    name: "Blurred",
+    subtitle: "Unisex Midnight Blue Blurred Typography Oversized T-Shirt",
+    description: 
+  "Some days aren’t meant to be clear—and that’s okay.\n\nThe Unisex Blur Mode Printed Oversized T-shirt captures that in-between headspace where thoughts exist, but words don’t. With a subtle blurred typography on the front and the phrase “Sab Kuch Dhundla Hai” on the back, this tee reflects moments when life feels slightly out of focus.",
     price: 999,
     images: [
       "/products/7/1.png",
       "/products/7/2.png",
       "/products/7/3.png",
+      "/products/7/4.png",
     ],
   },
   //   {
