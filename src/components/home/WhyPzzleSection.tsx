@@ -18,9 +18,9 @@ const items = [
 
 export default function WhyPzzleSection() {
   return (
-    <section className="w-full bg-dark-900 py-5 h-[375px]">
+    <section className="w-full bg-dark-900 py-16 sm:py-20">
       {/* Section header */}
-      <div className="mb-14 text-center">
+      <div className="mb-12 text-center px-4">
         <p className="mb-3 text-caption uppercase tracking-widest text-light-400">
           Our Philosophy
         </p>
@@ -30,13 +30,13 @@ export default function WhyPzzleSection() {
       </div>
 
       {/* Philosophy items */}
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-3 mb-20">
+      <div className="mx-auto max-w-6xl grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <div
             key={item.title}
             className="rounded-xl bg-light-200 border border-white/10 px-6 py-8 text-center transition hover:border-white"
           >
-            <h3 className="mb-3 text-body-medium text-xl font-semibold text-[#6B4F3F]">
+            <h3 className="mb-3 text-xl font-semibold text-[#6B4F3F]">
               {item.title}
             </h3>
             <p className="text-body text-[#3A2F2A] font-medium">
