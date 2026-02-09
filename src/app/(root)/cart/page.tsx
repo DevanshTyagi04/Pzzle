@@ -153,10 +153,11 @@ export default function CartPage() {
       focus:border-dark-500 focus:outline-none focus:ring-2 focus:ring-dark-500/20"
                 required
               />
-            </div>
               {/* <p className="mt-1 text-caption text-dark-500">
                 We’ll notify you when checkout goes live.
               </p> */}
+            </div>
+
             <button
               disabled={isCheckingOut || !email }
               onClick={async () => {
