@@ -94,10 +94,10 @@ export default function ProductDetailClient({
             {isAdding ? "Added ✓" : "Add to Bag"}
           </button>
 
-          <button className="flex items-center justify-center gap-2 rounded-full border border-light-300 px-6 py-4 text-body-medium text-dark-900">
+          {/* <button className="flex items-center justify-center gap-2 rounded-full border border-light-300 px-6 py-4 text-body-medium text-dark-900">
             <Heart className="h-5 w-5" />
             Favorite
-          </button>
+          </button> */}
 
           <CollapsibleSection title="Product Details" defaultOpen>
             <p>{product.description}</p>

@@ -12,6 +12,7 @@ export default function CartPage() {
     useCartStore();
 
   const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const [email, setEmail] = useState("");
 
   const isEmpty = items.length === 0;
   const showToast = useToastStore((s) => s.show);
@@ -139,9 +140,26 @@ export default function CartPage() {
               <span>Total</span>
               <span>₹{totalPrice()}</span>
             </div>
+            <div className="mt-6">
+              <label className="mb-1 block text-caption text-dark-700">
+                Email
+              </label>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full rounded-lg border border-light-300 px-4 py-3 text-body
+      focus:border-dark-500 focus:outline-none focus:ring-2 focus:ring-dark-500/20"
+                required
+              />
+              {/* <p className="mt-1 text-caption text-dark-500">
+                We’ll notify you when checkout goes live.
+              </p> */}
+            </div>
 
             <button
-              disabled={isCheckingOut}
+              disabled={isCheckingOut || !email }
               onClick={async () => {
                 if (isCheckingOut) return;
 
@@ -152,6 +170,7 @@ export default function CartPage() {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
+                      email,
                       items: items.map((i) => i.name).join(" | "),
                       sizes: items.map((i) => i.size).join(" | "),
                       quantities: items.map((i) => i.quantity).join(" | "),

@@ -26,9 +26,9 @@ export const products: Product[] = [
     images: [
       "/products/1/1.png",
       "/products/1/5.png",
-      "/products/1/4.png",
       "/products/1/2.png",
       "/products/1/3.png",
+      "/products/1/4.png",
     ],
     badge: {
       label: "New Drop",
@@ -84,6 +84,10 @@ export const products: Product[] = [
       "/products/4/4.png",
       "/products/4/5.png",
     ],
+    badge: {
+      label: "Hot!!",
+      tone: "red",
+    },
   },
   {
     id: "pzl-005",

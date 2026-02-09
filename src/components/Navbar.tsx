@@ -51,7 +51,7 @@ export default function Navbar() {
         </ul> */}
 
         <div className="hidden items-center gap-6 md:flex">
-          <Link href="/cart" className="text-body text-dark-900 transition-colors hover:text-dark-700">
+          <Link href="/cart" className="text-body text-dark-900 transition-colors hover:text-dark-700 font-semibold">
             My Cart ({totalItems})
           </Link>
         </div>

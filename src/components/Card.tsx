@@ -68,19 +68,19 @@ export default function Card({
 
       {/* Content */}
       <div className="p-4">
-        <h3 className="text-base font-medium text-dark-900">
+        <h3 className="text-base font-semibold text-dark-900">
           {title}
         </h3>
 
         {subtitle && (
-          <p className="mt-1 text-sm text-dark-600">
+          <p className="mt-1 text-sm font-medium text-dark-600">
             {subtitle}
           </p>
         )}
 
         <div className="mt-3 flex items-center justify-between">
           {displayPrice && (
-            <span className="text-sm font-semibold text-dark-900">
+            <span className="text-sm font-bold text-dark-900">
               {displayPrice}
             </span>
           )}
