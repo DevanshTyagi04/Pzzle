@@ -22,7 +22,7 @@ export const products: Product[] = [
     subtitle: "Black Comeback 2027 Graphic Printed Oversized T-Shirt",
     description:
     "The T-shirt is for anyone who knows life doesn’t follow deadlines. With a light-hearted, relatable message, this tee keeps things real—because comeback 2026 mein thoda mushkil hai, 2027 mein dekhte hain.\nWear it for the vibe. Wear it for the honesty. The comeback can wait.",
-    price: 999,
+    price: 499,
     images: [
       "/products/1/1.png",
       "/products/1/5.png",
@@ -42,7 +42,7 @@ export const products: Product[] = [
     name: "Holding it Together ",
     subtitle: "Classic Grey I'm Fine Typography Oversized T-Shirt",
     description: "Clean Tee designed for those holding it together… kinda. The crossed-out “I’M FINE” says what we all feel, and the small “trying.” keeps it honest.",
-    price: 999,
+    price: 399,
     images: [
       "/products/2/1.png",
       "/products/2/2.png",
@@ -57,7 +57,7 @@ export const products: Product[] = [
     name: "03:17 AM",
     subtitle: "Unisex Sage Green Minimal Graphic Printed Oversized T-Shirt",
     description: "Inspired by late-night thoughts that refuse to log out. The clean front print marks the hour when overthinking peaks, while the subtle back text—“still thinking.”—says everything without trying too hard.\n",
-    price: 1199,
+    price: 599,
     images: [
       "/products/3/1.png",
       "/products/3/2.png",
@@ -76,7 +76,7 @@ export const products: Product[] = [
     name: "Legacy in Progress",
     subtitle: "Washed Blue Cricket-Inspired Graphic Printed Oversized T-Shirt",
     description: " T-shirt is a quiet nod to one of cricket’s most unforgettable waits. Designed for those who followed every inning, every near-miss, and every moment of anticipation, this tee captures the patience, pressure, and belief behind the chase.\n",
-    price: 1199,
+    price: 699,
     images: [
       "/products/4/1.png",
       "/products/4/2.png",
@@ -95,7 +95,7 @@ export const products: Product[] = [
     name: "UNSPOKEN",
     subtitle: "Washed Black Hindi Typography Graphic Printed Oversized T-Shirt",
     description: "For thoughts that stay unsaid and stories that don’t need explaining. Rooted in everyday Indian humour and quiet confidence, this tee speaks volumes without saying too much.",
-    price: 1099,
+    price: 399,
     images: [
       "/products/5/1.png",
       "/products/5/2.png",
@@ -110,7 +110,7 @@ export const products: Product[] = [
     name: "Private Thoughts",
     subtitle: "Washed Brown Thoughtful Typography Graphic Printed Oversized T-Shirt",
     description: "Made for overthinkers, quiet observers, and people who prefer processing internally. The bold front text captures what everyone feels but rarely voices, while the subtle back print—“Internal Processing Only”—adds a sharp, witty finish.",
-    price: 999,
+    price: 499,
     images: [
       "/products/6/1.png",
       "/products/6/2.png",
@@ -126,7 +126,7 @@ export const products: Product[] = [
     subtitle: "Unisex Midnight Blue Blurred Typography Oversized T-Shirt",
     description: 
   "Some days aren’t meant to be clear—and that’s okay.\n\nThe Unisex Blur Mode Printed Oversized T-shirt captures that in-between headspace where thoughts exist, but words don’t. With a subtle blurred typography on the front and the phrase “Sab Kuch Dhundla Hai” on the back, this tee reflects moments when life feels slightly out of focus.",
-    price: 999,
+    price: 699,
     images: [
       "/products/7/1.png",
       "/products/7/2.png",
